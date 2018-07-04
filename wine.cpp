@@ -17,9 +17,6 @@ int calc(int n, int p, int arr[]) {
     if(ref > -1) {
         return ref;
     }
-    int a = calc(n-1,0,arr);
-    int b = calc(n-1,1,arr);
-    int c = calc(n-1,2,arr);
     if(p == 0) {
         ref = max(calc(n-1,0,arr),calc(n-1,1,arr));
         return ref;
