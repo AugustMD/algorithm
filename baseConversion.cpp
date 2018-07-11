@@ -4,7 +4,7 @@
 
 using namespace std;
 
-int a, b, m, input[26];
+int a, b, m, input[25];
 string output;
 
 int toTen(int i) {
