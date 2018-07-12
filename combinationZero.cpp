@@ -30,7 +30,6 @@ long long factorial(long long c, long long a, long long i) {
 int main() {
     long long n, m, output, two, five;
     scanf("%lld %lld",&n,&m);
-    // printf("%lld %lld %lld\n",factorial(count(n),n),factorial(count(m),m),factorial(count(n-m),n-m));
     two = factorial(count(n,2),n,2) - factorial(count(m,2),m,2) - factorial(count(n-m,2),n-m,2);
     five = factorial(count(n,5),n,5) - factorial(count(m,5),m,5) - factorial(count(n-m,5),n-m,5);
     output = min(two,five);
